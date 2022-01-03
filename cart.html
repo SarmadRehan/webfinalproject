@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Best Online Mart in Pakistan | DigiMart.com</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <script src="JS/script.js"></script>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.png" alt="DigiMart.com">
+        </div>
+        <ul>
+            <li class="item"><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <h1>Your Cart</h1>
+
+    <ul id="cartList" name="myname">
+        <li>
+            <div id="divOne">
+                <img class="cartItem" id="imgg" src="bg.jpg" alt="">
+                <p class="cartItem" id="productName"> name</p>
+            </div>
+            <div id="divTwo">
+                <p class="cartItem" id="productPrice">price</p>
+                <input class="cartItem" id="removeButton" type="button" onclick="removeButton(this.id)" value="remove">
+            </div>
+
+        </li>
+    </ul>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.DigiMart.com. All rights reserved!
+        </div>
+    </footer>
+    <!-- <script>
+        window.addEventListener('load', (event) => {
+            console.log('page is fully loaded');
+            let my = document.getElementById("cartDiv");
+            console.log(my)
+        });
+
+    </script> -->
+</body>
+
+</html>

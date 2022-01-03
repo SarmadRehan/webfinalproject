@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+
+<body>
+    <ul id="mylist1">
+        <li id="mylist2">
+            <div class="pant" id='pant1'>
+                <img src="Pictures/p1.jpg" alt="">
+                <h2 id="itemName" class="h-secondary">Cut Price Cotton Chno Pant For Men DArk Navy Blue </h2>
+                <p id="price" class="center" class="myprice"> 849</p>
+            </div>
+
+        </li>
+
+    </ul>
+    <ul class="pant" id='pant1'>
+        <li>
+            <img src="Pictures/p1.jpg" alt="">
+            <h2 id="itemName" class="h-secondary">Cut Price Cotton Chno Pant For Men DArk Navy Blue </h2>
+            <p id="price" class="center" class="myprice"> 849</p>
+        </li>
+    </ul>
+    <button id='t1' onclick="addToCart(this.id)" value="Chart 1">Chart 1</button>
+    <button id='t2' onclick="addToCart(this.id)" value="Chart 2">Chart 2</button>
+    <button id='t3' onclick="addItems()" value="Chart 3">Chart 3</button>
+    <script>
+        var btn = document.getElementsByClassName('t1');
+        function addToCart(valuee) {
+            console.log(valuee);
+        }
+        var button = document.getElementById("btn");
+    </script>
+    <script>
+
+        function addItems() 
+        {
+            let mainDiv = document.getElementById("pant1")
+            let myLi = document.createElement("li");
+
+            let divOne = document.createElement("div")
+            let divTwo = document.createElement("div")
+            let myImage = document.createElement("img")
+            let productName = document.createElement("p")
+            let productPrice = document.createElement("p")
+            let removeButton = document.createElement("input")
+            myImage.id = "imagee";
+            myImage.className = "cartItem";
+            let img2 = document.getElementById('itemName')
+            myLi.appendChild(myImage)
+            myImage.src = document.getElementById("pant1").firstElementChild.src;
+            let list = document.getElementById('mylist1');
+            list.appendChild(myLi);
+        }
+
+
+    </script>
+</body>
+
+</html>
